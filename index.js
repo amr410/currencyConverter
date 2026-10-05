@@ -193,7 +193,7 @@ swap.addEventListener("click", () => {
   changeFlag();
 });
 convertBtn.addEventListener("click", async () => {
-  let amount = amountInput.value === "" ? 1 : Number(amountInput.value);
+  let amount = Number(amountInput.value) || 1;
   let from = selectOne.value;
   let to = selectTwo.value;
 
