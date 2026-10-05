@@ -1,0 +1,18 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+.body {
+  background: linear-gradient(90deg, black, gray);
+  background-size: cover;
+}
+.converter {
+  background: linear-gradient(180deg, black, #007272);
+}
+.logo {
+  left: 93%;
+  bottom: 10px;
+  cursor: pointer;
+}
