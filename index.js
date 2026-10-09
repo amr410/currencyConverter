@@ -161,12 +161,10 @@ let result = document.querySelector("[data-before-after]");
 let swap = document.querySelector("[data-swap]");
 
 function select() {
-  let options = Object.entries(COUNTRY_NAMES)
-    .map(
-      ([code, name]) => `<option value="${code}">${code} || ${name}</option>`,
-    )
-    .join("");
-
+  let options = "";
+  for (let country in COUNTRY_NAMES) {
+    options += `<option value="${country}">${country} || ${COUNTRY_NAMES[country]} </option>`;
+  }
   selectOne.innerHTML = options;
   selectTwo.innerHTML = options;
 }
